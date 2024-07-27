@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naam Lijst</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>People who say they will leave US if Trump wins</h1>
+    <ul id="nameList">
+        <!-- Namen zullen hier worden toegevoegd -->
+    </ul>
+
+    <script>
+        const names = ["Taylor Swift", "Robert DeNiro", "Eminem", "Ellen Degeneres", "Sharon Stone", "Leonardo DiCaprio", "Tommy Lee", "Fauci", "Cher", "Barbara Streisand", "Rashida Tlaib", "Hillary Clinton", "Laureate Wole Soyinka", "Katie Couric", "Travis Kelce", "Oprah Winfrey"];
+
+        const nameList = document.getElementById('nameList');
+
+        names.forEach(name => {
+            const li = document.createElement('li');
+            li.textContent = name;
+            nameList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
